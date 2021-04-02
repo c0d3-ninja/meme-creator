@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/buttonColorPrimaryDark">
+    <item android:id="@android:id/mask">
+        <selector>
+            <item android:state_enabled="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/buttonColorPrimaryDark" />
+                </shape>
+            </item>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/buttonInactiveDark" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item android:id="@android:id/background">
+        <selector>
+            <item android:state_enabled="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/buttonColorPrimary" />
+                </shape>
+            </item>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/buttonInactive" />
+                </shape>
+            </item>
+        </selector>
+
+    </item>
+</ripple>

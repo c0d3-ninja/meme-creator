@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30"
+    def versionPropsFile = file('version.properties')
+    def codeVersionMapFile = file('codeVersionMap.properties')
+    if (versionPropsFile.canRead()) {
+        Properties codeVersionProps = new Properties()
+        codeVersionProps.load(new FileInputStream(codeVersionMapFile))
+        Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionPropsFile))
+
+        def isReleaseBuild = versionProps['IS_RELEASEBUILD'].toInteger()
+
+        def majorVersion =versionProps['MAJOR_VERSION'].toInteger()
+        def minorVersion =versionProps['MINOR_VERSION'].toInteger()
+        def patchVersion =versionProps['PATCH_VERSION'].toInteger()+1
+        if(patchVersion>=999){
+            patchVersion=0
+            minorVersion=minorVersion+1
+        }
+        if(minorVersion>=10){
+            minorVersion=0
+            majorVersion=majorVersion+1
+        }
+        def name = majorVersion+"."+minorVersion+"."+patchVersion
+        def code = versionProps['VERSION_CODE'].toInteger()
+        if(isReleaseBuild==1){
+            code=code+1
+            codeVersionProps[code.toString()]=name.toString()
+            codeVersionProps.store(codeVersionMapFile.newWriter(), null)
+            versionProps['IS_RELEASEBUILD']=0.toString()
+        }
+        versionProps['VERSION_CODE']=code.toString()
+        versionProps['MAJOR_VERSION']=majorVersion.toString()
+        versionProps['MINOR_VERSION']=minorVersion.toString()
+        versionProps['PATCH_VERSION']=patchVersion.toString()
+        versionProps.store(versionPropsFile.newWriter(), null)
+        defaultConfig {
+            applicationId "com.thugdroid.memeking"
+            minSdkVersion 21
+            targetSdkVersion 29
+            versionCode code
+            versionName name
+            testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        }
+    }
+    else {
+        throw new GradleException("Could not read version.properties!")
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            ext.enableCrashlytics = false
+            ext.alwaysUpdateBuildId = false
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    def room_version = "2.2.4"
+    def nav_version = "2.3.0-alpha02"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+    implementation project(":colorpicker")
+    implementation project(":collagegrid")
+    implementation project(":memetextview")
+    implementation project(":stickerimageview")
+    implementation project(':walkthrough')
+    implementation project(':myseekbar')
+    implementation project(':simplecrop')
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.firebase:firebase-functions:19.0.2'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.android.play:core:1.7.1'
+    implementation 'com.google.firebase:firebase-perf:19.0.7'
+    implementation 'com.google.firebase:firebase-config:19.1.4'
+    implementation 'com.google.firebase:firebase-messaging:20.1.7'
+
+}
+apply plugin: "androidx.navigation.safeargs"
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.firebase.firebase-perf'

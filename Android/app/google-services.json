@@ -1,0 +1,138 @@
+{
+  "project_info": {
+    "project_number": "5289691343",
+    "firebase_url": "https://memeking-thugdroid.firebaseio.com",
+    "project_id": "memeking-thugdroid",
+    "storage_bucket": "memeking-thugdroid-asia"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5289691343:android:df22be53dadfad695c0fba",
+        "android_client_info": {
+          "package_name": "com.thugdroid.memeking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5289691343-jntg7fspd5s745me2l7ti24np9g0efoq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thugdroid.memeking",
+            "certificate_hash": "f94bd043bc84ee9c505dce20a8e09538a522b4e7"
+          }
+        },
+        {
+          "client_id": "5289691343-446j1od9uhe7kc8otl65t960goi0k0h5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thugdroid.memeking",
+            "certificate_hash": "d053ab09b4223377bf68bd2fa4d4f94fe0a19a4e"
+          }
+        },
+        {
+          "client_id": "5289691343-ua4lbsfr27ut2s2u5frift0aeebltu4m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thugdroid.memeking",
+            "certificate_hash": "4a753116200e575c245929aa81f4be068dc1f035"
+          }
+        },
+        {
+          "client_id": "5289691343-qo5ushuu3c4tl9k99ekqfn3dfehb767h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAexY9J5jl_v8dyP_FDr2HG2zKxCo66nvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5289691343-qo5ushuu3c4tl9k99ekqfn3dfehb767h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5289691343:android:e42e52bc769692895c0fba",
+        "android_client_info": {
+          "package_name": "com.thugdroid.memeking.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5289691343-tpk0e71rhhd82p2dfgb2ue5g97o3rokv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thugdroid.memeking.admin",
+            "certificate_hash": "7517a056f9b0e9301d8567a8767cc2053182aa1f"
+          }
+        },
+        {
+          "client_id": "5289691343-qo5ushuu3c4tl9k99ekqfn3dfehb767h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAexY9J5jl_v8dyP_FDr2HG2zKxCo66nvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5289691343-qo5ushuu3c4tl9k99ekqfn3dfehb767h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5289691343:android:3fb5f6545164b42a5c0fba",
+        "android_client_info": {
+          "package_name": "com.thugdroid.memeking.adminnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5289691343-hc2np4d3u0g5uk5ibcnth3jc07v0ktaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thugdroid.memeking.adminnew",
+            "certificate_hash": "c4117ebdc313926387f29d86e461cc4534d1bd46"
+          }
+        },
+        {
+          "client_id": "5289691343-qo5ushuu3c4tl9k99ekqfn3dfehb767h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAexY9J5jl_v8dyP_FDr2HG2zKxCo66nvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5289691343-qo5ushuu3c4tl9k99ekqfn3dfehb767h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

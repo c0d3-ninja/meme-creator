@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/regionItemParent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/regionItemHeight"
+    android:elevation="@dimen/cardElevation"
+    android:background="@color/cardPrimary"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/regionItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kollywood"
+            android:textStyle="bold"
+            android:textColor="@color/onCardPrimary"
+            android:textSize="@dimen/regionItemTitleSize"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/regionItemLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamizh"
+            android:layout_below="@+id/regionItemTitle"
+            android:textColor="@color/onCardPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    elevation start-->
+    <dimen name="waterMarkElevation">2dp</dimen>
+    <dimen name="memeTextElevation">3dp</dimen>
+    <dimen name="headerElevation">8dp</dimen>
+    <dimen name="cardElevation">2dp</dimen>
+    <dimen name="bottomSheetElevation">16dp</dimen>
+    <dimen name="searchFragmentElevation">12dp</dimen>
+    <dimen name="createMemeSliderElevation">2dp</dimen>
+    <dimen name="freezeLayerElevation">32dp</dimen>
+    <dimen name="topFreezeLayerElevation">33dp</dimen>
+<!--    elevation end-->
+
+<!--    width start-->
+    <dimen name="editTextBorderWidth">1dp</dimen>
+    <dimen name="bottomToolsDividerWidth">1dp</dimen>
+    <dimen name="fontItemWidth">75dp</dimen>
+    <dimen name="stickerItemWidth">75dp</dimen>
+
+<!--    width end-->
+
+<!--    height start-->
+    <dimen name="headerHeight">50dp</dimen>
+    <dimen name="bottomSheetListItemHeight">50dp</dimen>
+    <dimen name="dividerHeight">1dp</dimen>
+    <dimen name="logoHeight">24dp</dimen>
+    <dimen name="templateItemHeight">175dp</dimen>
+    <dimen name="searchDescriptionHeight">72dp</dimen>
+    <dimen name="uploadTemplatePreviewHeight">175dp</dimen>
+    <dimen name="searchSuggestionMaxHeight">200dp</dimen>
+    <dimen name="searchSuggestionItemHeight">50dp</dimen>
+    <dimen name="regionItemHeight">100dp</dimen>
+    <dimen name="bottomToolsIconHeight">24dp</dimen>
+    <dimen name="createMemeAddTextETHeight">100dp</dimen>
+    <dimen name="tabIndicatorHeight">4dp</dimen>
+    <dimen name="FontDialogHeight">350dp</dimen>
+    <dimen name="StickerDialogHeight">400dp</dimen>
+    <dimen name="fontItemHeight">75dp</dimen>
+    <dimen name="stickerItemHeight">75dp</dimen>
+    <dimen name="collageListImageHeight">125dp</dimen>
+    <dimen name="loadingDialogHeight">100dp</dimen>
+    <dimen name="uploadTemplateCategorySpinnerHeight">40dp</dimen>
+    <dimen name="templatesLastItemPaddingForFab">100dp</dimen>
+    <dimen name="moreInfoDialogHeight">250dp</dimen>
+    <dimen name="chooseImageOptionsBsHeight">200dp</dimen>
+    <dimen name="memeImageHeight">450dp</dimen>
+    <dimen name="templateGroupCardHeight">175dp</dimen>
+<!--    height end-->
+
+<!--    margins start-->
+    <dimen name="headerStartIconMargin">8dp</dimen>
+    <dimen name="headerEndIconMargin">16dp</dimen>
+    <dimen name="headerContentStartMargin">16dp</dimen>
+    <dimen name="bottomSheetSliderMargin">8dp</dimen>
+    <dimen name="regionTitleMarginTop">50dp</dimen>
+    <dimen name="toolsHeaderNMainMargin">4dp</dimen>
+    <dimen name="createMemeSliderMargin">8dp</dimen>
+    <dimen name="createMemeSliderTitleMargin">8dp</dimen>
+    <dimen name="uploadTemplatesDropdownIconMargin">16dp</dimen>
+    <dimen name="waterMarkLeftMargin">25dp</dimen>
+    <dimen name="waterMarkBottomMargin">50dp</dimen>
+    <dimen name="saveWOWaterMarkTvMargin">50dp</dimen>
+    <dimen name="createMemeImageMargin">2dp</dimen>
+    <dimen name="cropImageMargin">20dp</dimen>
+<!--    margins end-->
+
+<!--    padding start-->
+    <dimen name="iconsPadding">2dp</dimen>
+    <dimen name="headerSearchEditTextPadding">5dp</dimen>
+    <dimen name="searchDescriptionEditTextPadding">10dp</dimen>
+    <dimen name="bottomToolsTopPadding">2dp</dimen>
+    <dimen name="bottomToolsBottomPadding">5dp</dimen>
+    <dimen name="bottomToolsIconPadding">12dp</dimen>
+    <dimen name="dialogAddTextTopPadding">16dp</dimen>
+    <dimen name="collageListItemPaddding">10dp</dimen>
+<!--    padding end-->
+
+    <!--    spaces start-->
+    <dimen name="bsItemsHorizontalSpace">16dp</dimen>
+    <dimen name="itemSpaceXS">2dp</dimen>
+    <dimen name="itemSpaceS">4dp</dimen>
+    <dimen name="itemSpaceM">8dp</dimen>
+    <dimen name="itemSpaceL">16dp</dimen>
+    <dimen name="itemSpaceXL">32dp</dimen>
+    <dimen name="itemSpaceXXL">48dp</dimen>
+    <dimen name="regionGridHorizontalSpace">30dp</dimen>
+    <dimen name="regionGridVerticalSpace">20dp</dimen>
+    <dimen name="addNewTextBtnMargin">16dp</dimen>
+    <!--    spaces end-->
+
+    <!--    defaultFont sizes start-->
+    <dimen name="signInTitle">20sp</dimen>
+    <dimen name="regionTitle">30sp</dimen>
+    <dimen name="regionItemTitleSize">14sp</dimen>
+    <dimen name="bottomToolsHeaderTitleSize">12sp</dimen>
+    <dimen name="createMemeThumbTextSize">12sp</dimen>
+    <dimen name="createMemeBubbleTextSize">12sp</dimen>
+    <dimen name="createMemeSectionTextSize">12sp</dimen>
+    <dimen name="loadingDialogTextSize">20sp</dimen>
+    <dimen name="errorMsgTitleTextSize">18sp</dimen>
+    <dimen name="appNameWatermarkTextSize">5sp</dimen>
+    <dimen name="creditsTitleTextSize">15sp</dimen>
+    <!--    defaultFont sizes end-->
+
+    <!--    radius start-->
+    <dimen name="addTextRadius">5dp</dimen>
+    <dimen name="templatesGroupRadius">5dp</dimen>
+    <!--    radius end-->
+
+    <!--    sizes start-->
+    <dimen name="errorLayoutIconSize">100dp</dimen>
+    <dimen name="headerMenuIconSize">30dp</dimen>
+    <dimen name="iconsSize">24dp</dimen>
+    <dimen name="watermarkSize">30dp</dimen>
+    <dimen name="memeLoadingSize">50dp</dimen>
+    <!--    sizes end-->
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="mainGrid" type="id"/>
+    <item name="grid1" type="id"/>
+    <item name="grid2" type="id"/>
+    <item name="grid3" type="id"/>
+    <item name="grid4" type="id"/>
+    <item name="grid5" type="id"/>
+    <item name="grid6" type="id"/>
+    <item name="placeHolder" type="id"/>
+    <item name="progressBar" type="id"/>
+    <item name="singleGridImage" type="id"/>
+</resources>

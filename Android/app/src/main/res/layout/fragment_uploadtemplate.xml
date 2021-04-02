@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/uploadTemplateHeader"
+        style="@style/Header"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/headerHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/uploadTemplateBackParent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@+id/uploadTemplateHeader"
+        app:layout_constraintTop_toTopOf="@id/uploadTemplateHeader"
+        app:layout_constraintBottom_toBottomOf="@id/uploadTemplateHeader"
+        style="@style/Header.StartIcon"
+        android:background="?attr/selectableItemBackground"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_grey_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        style="@style/Header.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_template"
+        app:layout_constraintBottom_toBottomOf="@id/uploadTemplateHeader"
+        app:layout_constraintEnd_toEndOf="@id/uploadTemplateHeader"
+        app:layout_constraintStart_toStartOf="@id/uploadTemplateHeader"
+        app:layout_constraintTop_toTopOf="@id/uploadTemplateHeader" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/noInternetConnectionParent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/uploadTemplateHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        >
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/somethingWentWrongParent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/uploadTemplateHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        >
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/uploadTemplateLoadingParent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/uploadTemplateHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:indeterminate="true"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/uploadTemplateContentParent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/uploadTemplateHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <TextView
+            android:id="@+id/uploadTemplateCategotyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/headerStartIconMargin"
+            android:text="Category:"
+            app:layout_constraintBottom_toBottomOf="@id/uploadTemplateCategorySpinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/uploadTemplateCategorySpinner"
+            android:textStyle="bold"
+            />
+
+        <Spinner
+            android:id="@+id/uploadTemplateCategorySpinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/uploadTemplateCategorySpinnerHeight"
+            android:layout_margin="@dimen/headerStartIconMargin"
+            android:background="@drawable/accent_border"
+            android:paddingRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/uploadTemplateCategotyTv"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/uploadTemplatesDropdownIconMargin"
+            android:src="@drawable/ic_arrow_drop_down_grey_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/uploadTemplateCategorySpinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/uploadTemplateCategorySpinner" />
+
+        <EditText
+            android:id="@+id/uploadTemplateSearchDescription"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/searchDescriptionHeight"
+            android:layout_marginStart="@dimen/headerStartIconMargin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/headerStartIconMargin"
+            android:layout_marginBottom="@dimen/headerStartIconMargin"
+            android:background="@drawable/accent_border"
+            android:gravity="start"
+            android:hint="@string/enter_search_tags_here"
+            android:inputType="textMultiLine"
+            android:maxLength="@integer/searchTagsMaxLength"
+            android:padding="@dimen/searchDescriptionEditTextPadding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uploadTemplateCategorySpinner" />
+
+        <TextView
+            android:id="@+id/uploadSearchExampleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/headerStartIconMargin"
+            android:layout_marginBottom="@dimen/headerStartIconMargin"
+            android:text="@string/search_tags_description"
+            app:layout_constraintEnd_toEndOf="@id/uploadTemplateSearchDescription"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/uploadTemplateSearchDescription"
+            app:layout_constraintTop_toBottomOf="@id/uploadTemplateSearchDescription"
+            android:textStyle="bold|italic"
+            />
+
+        <Button
+            android:id="@+id/uploadTemplateAdd"
+            style="@style/Button.PositiveBorderLess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/headerStartIconMargin"
+            android:drawableStart="@drawable/ic_add_blue_24dp"
+            android:text="@string/add_template"
+            app:layout_constraintBottom_toTopOf="@id/positiveBtnBarrier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uploadSearchExampleTv" />
+
+        <ImageView
+            android:id="@+id/templatePreviewImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/headerStartIconMargin"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/positiveBtnBarrier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uploadSearchExampleTv" />
+
+        <!--    <androidx.recyclerview.widget.RecyclerView-->
+        <!--        android:id="@+id/uploadTemplatesPreview"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="0dp"-->
+        <!--        app:layout_constraintStart_toStartOf="@id/uploadTemplateSearchDescription"-->
+        <!--        app:layout_constraintEnd_toEndOf="@id/uploadTemplateSearchDescription"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/uploadTemplateAdd"-->
+        <!--        app:layout_constraintBottom_toTopOf="@+id/uploadTemplatePositiveBtn"-->
+        <!--        android:layout_marginBottom="@dimen/headerStartIconMargin"-->
+        <!--        />-->
+
+
+        <Button
+            android:id="@+id/uploadTemplatePositiveBtnInactive"
+            style="@style/Button.InActive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_template"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/uploadTemplatePositiveBtn"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_template"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/positiveBtnBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="uploadTemplatePositiveBtn,uploadTemplatePositiveBtnInactive"
+            tools:layout_editor_absoluteY="731dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/uploadTemplateCropFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/topFreezeLayerElevation"
+        android:background="@color/headerBackground"
+        android:visibility="gone"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/uploadTemplateTempImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/headerBackground"
+        android:visibility="gone"
+        >
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

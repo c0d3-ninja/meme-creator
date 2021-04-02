@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="collageListImageSize">125dp</dimen>
+    <dimen name="collageListImagePadding">10dp</dimen>
+    <dimen name="gridMargin">2dp</dimen>
+    <dimen name="gridMarginHalf">1dp</dimen>
+    <dimen name="gridWidth">72dp</dimen>
+    <dimen name="gridHalfWidth">36dp</dimen>
+    <dimen name="gridOneThirdOfWidth">24dp</dimen>
+    <dimen name="addImageSize">35dp</dimen>
+</resources>

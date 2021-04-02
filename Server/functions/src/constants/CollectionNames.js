@@ -1,0 +1,15 @@
+module.exports={
+    USERS:"Users",
+    REGION:"Region",
+    TEMPLATE_CATEGORIES:"Categories",
+    TEMPLATES:"Templates",
+    UNVERIFIED_TEMPLATES:"UnverifiedTemplates",
+    FAVORITES:"Favorites",
+    REPORTS:"Reports",
+    REPORTS_MEME:"REPORTS_MEME",
+    FAILED_SEARCH_INDEX:"SHEDULER_FAILED_SEARCHINDEX",
+    FEEDBACKS:"UserFeedbacks",
+    MEMES:"Memes",
+    UNVERIFIED_MEMES:"UnverifiedMemes",
+    TEMPLATE_GROUPS:"TemplateGroups"
+}

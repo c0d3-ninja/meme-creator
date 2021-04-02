@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:elevation="@dimen/cardElevation"
+    android:background="@color/memeItemBg"
+    app:cardCornerRadius="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/itemMemeHighlightView1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemSpaceL"
+            android:alpha="0.5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/memeItemInstaUsernameParent"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <ImageView
+                android:id="@+id/memeItemDummy5"
+                android:layout_width="@dimen/iconsSize"
+                android:layout_height="@dimen/iconsSize"
+                android:src="@drawable/ic_insta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="@dimen/headerStartIconMargin"
+                />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/memeItemInstaUsernameTvParent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/memeItemDummy5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginLeft="@dimen/itemSpaceS"
+                android:layout_marginRight="@dimen/headerEndIconMargin"
+                android:background="?attr/selectableItemBackground"
+                >
+                <TextView
+                    android:id="@+id/memeItemInstaUsernameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:textColor="@color/roundedRectangle3"
+                    android:textSize="16sp"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally = "true"
+                    android:fadingEdge = "horizontal"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/memeItemImageParent"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/memeImageHeight"
+            android:background="@color/memeItemBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/memeItemHeaderBarrier">
+
+            <RelativeLayout
+                android:id="@+id/memeItemLoading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/memeLoadingSize"
+                    android:layout_height="@dimen/memeLoadingSize"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_loading" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/itemMemeImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/memeItemDummy2"
+            layout="@layout/component_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerHeight"
+            app:layout_constraintEnd_toEndOf="@id/memeItemImageParent"
+            app:layout_constraintStart_toStartOf="@id/memeItemImageParent"
+            app:layout_constraintTop_toBottomOf="@id/memeItemImageParent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/memeItemBottomControls"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@color/memeItemBg"
+            app:layout_constraintEnd_toEndOf="@id/memeItemImageParent"
+            app:layout_constraintStart_toStartOf="@id/memeItemImageParent"
+            app:layout_constraintTop_toBottomOf="@id/memeItemDummy2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/memeItemDownloadMemeBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintEnd_toStartOf="@id/memeItemDummy3"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/memeItemDownloadIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_file_download_grey_24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/memeItemDownloadCountTv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/memeItemDownloadCountTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/memeItemDownloadIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include
+                android:id="@+id/memeItemDummy3"
+                layout="@layout/component_divider"
+                android:layout_width="@dimen/dividerHeight"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/itemSpaceL"
+                android:layout_marginBottom="@dimen/itemSpaceL"
+                app:layout_constraintEnd_toEndOf="@id/memeItemShareMemeBtn"
+                app:layout_constraintStart_toEndOf="@id/memeItemDownloadMemeBtn" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/memeItemShareMemeBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintEnd_toStartOf="@id/memeItemDummy4"
+                app:layout_constraintStart_toEndOf="@id/memeItemDummy3">
+
+                <ImageView
+                    android:id="@+id/memeItemShareIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share_grey_24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/memeItemShareCountTv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/memeItemShareCountTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/memeItemShareIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include
+                android:id="@+id/memeItemDummy4"
+                layout="@layout/component_divider"
+                android:layout_width="@dimen/dividerHeight"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/itemSpaceL"
+                android:layout_marginBottom="@dimen/itemSpaceL"
+                app:layout_constraintEnd_toEndOf="@id/memeItemReportMemeBtn"
+                app:layout_constraintStart_toEndOf="@id/memeItemShareMemeBtn" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/memeItemReportMemeBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:alpha="0.8"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/memeItemDummy4">
+
+                <ImageView
+                    android:id="@+id/memeItemReportImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_report_red_24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/memeItemHeaderBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="memeItemInstaUsernameParent,itemMemeHighlightView1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

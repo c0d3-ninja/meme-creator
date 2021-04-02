@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/collageListImage"
+    android:layout_width="@dimen/collageListImageSize"
+    android:layout_height="@dimen/collageListImageSize"
+    android:padding="@dimen/collageListImagePadding"
+    android:background="?attr/selectableItemBackground"
+    >
+</ImageView>

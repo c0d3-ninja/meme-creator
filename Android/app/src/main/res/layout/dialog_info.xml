@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/itemSpaceL"
+    android:paddingLeft="@dimen/itemSpaceL"
+    android:paddingRight="@dimen/itemSpaceL"
+    android:paddingBottom="@dimen/itemSpaceM"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/infoDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/infoDialogPositive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        style="@style/Button.StateLessDarkBorderLess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infoDialogTitle"
+        android:layout_margin="@dimen/itemSpaceL"
+        android:textColor="@color/colorPrimary"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

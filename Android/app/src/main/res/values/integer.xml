@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="searchMaxLength">50</integer>
+    <integer name="searchTagsMaxLength">300</integer>
+    <integer name="templatesGridSpace">2</integer>
+    <integer name="templatesGroupGridSpace">32</integer>
+    <integer name="memesGridSpace">32</integer>
+    <integer name="templatesGridSpanCount">2</integer>
+    <integer name="regionGridColumns">2</integer>
+    <integer name="shimmerDuration">800</integer>
+    <integer name="textSizeBsbMax">30</integer>
+    <integer name="borderSizeBsbMax">100</integer>
+    <integer name="borderSizeBsbSectionCount">5</integer>
+    <integer name="textOutlineSizeBsbMax">5</integer>
+    <integer name="memeTextViewLeftRightPadding">10</integer>
+    <integer name="fragmentAnimationDuration">350</integer>
+    <integer name="spotlightX">50</integer>
+    <integer name="spotlightIncrementY">200</integer>
+    <integer name="spotlightBottomToolbarIncrementY">400</integer>
+    <integer name="mainWalkthroughDelay">1000</integer>
+    <integer name="walkthroughSpotAnimationDuration">250</integer>
+    <integer name="walkthroughCircleRadius">50</integer>
+    <integer name="walkthroughNextFrameDuration">500</integer>
+    <integer name="cropInitialScale">1</integer>
+    <integer name="cropHandleSizeInDp">10</integer>
+    <integer name="cropTouchPaddingInDp">20</integer>
+    <integer name="feedbackDescriptionMinLength">10</integer>
+    <integer name="watermarkTimeoutInHrs">3</integer>
+</resources>

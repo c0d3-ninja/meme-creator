@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loadingDialogDummy1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/loadingDialogHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <ProgressBar
+            android:id="@+id/loadingProgresBar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:indeterminate="true"
+            app:layout_constraintStart_toStartOf="@id/loadingDialogDummy1"
+            app:layout_constraintTop_toTopOf="@id/loadingDialogDummy1"
+            app:layout_constraintBottom_toBottomOf="@id/loadingDialogDummy1"
+            android:layout_marginLeft="@dimen/headerContentStartMargin"
+            />
+        <TextView
+            android:id="@+id/loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            app:layout_constraintStart_toEndOf="@id/loadingProgresBar"
+            app:layout_constraintTop_toTopOf="@id/loadingDialogDummy1"
+            app:layout_constraintBottom_toBottomOf="@id/loadingDialogDummy1"
+            android:layout_marginLeft="@dimen/headerContentStartMargin"
+            android:textSize="@dimen/loadingDialogTextSize"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:fontFamily">@font/myfont</item>
+    </style>
+
+    <style name="ImagePreviewerTheme" >
+        <item name="android:windowIsFloating">false</item>
+    </style>r
+
+    <style name="Header">
+        <item name="android:elevation">@dimen/headerElevation</item>
+        <item name="android:background">@color/headerBackground</item>
+    </style>
+    <style name="Header.StartItem" parent="Header">
+        <item name="android:layout_marginLeft">@dimen/headerContentStartMargin</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Header.Title" parent="Header">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Header.TitleAfterIcon" parent="Header">
+        <item name="android:layout_marginLeft">@dimen/headerContentStartMargin</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Header.OtherItemsAfterIcon" parent="Header">
+        <item name="android:layout_marginLeft">@dimen/headerContentStartMargin</item>
+    </style>
+
+    <style name="Header.StartIcon" parent="Header">
+        <item name="android:layout_marginLeft">@dimen/headerStartIconMargin</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Header.EndIcon" parent="Header">
+        <item name="android:layout_marginRight">@dimen/headerEndIconMargin</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_primary</item>
+        <item name="android:textColor">@color/onColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Button.BorderLess" parent="Button">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+
+    </style>
+    <style name="Button.PositiveBorderLess" parent="Button.BorderLess">
+        <item name="android:textColor">@color/buttonColorPrimary</item>
+    </style>
+    <style name="Button.NegativeBorderLess" parent="Button.BorderLess">
+        <item name="android:textColor">@color/buttonColorNegative</item>
+    </style>
+    <style name="Button.StateLessBorderLess" parent="Button.BorderLess">
+        <item name="android:textColor">@color/buttonStateLess</item>
+    </style>
+
+    <style name="Button.StateLessDarkBorderLess" parent="Button.BorderLess">
+        <item name="android:textColor">@color/buttonStateLessDark</item>
+    </style>
+
+    <style name="Button.InActive" parent="Button">
+        <item name="android:background">@drawable/button_inactive</item>
+    </style>
+    <style name="BottomTool">
+        <item name="android:paddingTop">@dimen/bottomToolsTopPadding</item>
+        <item name="android:paddingBottom">@dimen/bottomToolsBottomPadding</item>
+    </style>
+    <style name="BottomTool.HeaderTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/bottomToolsHeaderTitleSize</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:id="@+id/searchHeader"
+        style="@style/Header"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/headerHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/searchBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/searchHeader"
+        app:layout_constraintStart_toStartOf="@id/searchHeader"
+        app:layout_constraintTop_toTopOf="@id/searchHeader"
+        style="@style/Header.StartIcon"
+        android:padding="@dimen/iconsPadding"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_grey_24dp"
+            app:layout_constraintStart_toStartOf="@id/searchBack"
+            app:layout_constraintEnd_toEndOf="@id/searchBack"
+            app:layout_constraintTop_toTopOf="@id/searchBack"
+            app:layout_constraintBottom_toBottomOf="@id/searchBack"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/searchCloseAndProgressParent"
+        style="@style/Header.EndIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="@dimen/iconsPadding"
+        app:layout_constraintBottom_toBottomOf="@id/searchHeader"
+        app:layout_constraintEnd_toEndOf="@id/searchHeader"
+        app:layout_constraintTop_toTopOf="@id/searchHeader">
+
+        <ImageView
+            android:id="@+id/searchClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_grey_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/searchCloseAndProgressParent"
+            app:layout_constraintEnd_toEndOf="@id/searchCloseAndProgressParent"
+            app:layout_constraintStart_toStartOf="@id/searchCloseAndProgressParent"
+            app:layout_constraintTop_toTopOf="@id/searchCloseAndProgressParent"
+            />
+
+        <ProgressBar
+            android:id="@+id/searchProgressBar"
+            android:layout_width="@dimen/logoHeight"
+            android:layout_height="@dimen/logoHeight"
+            android:padding="@dimen/iconsPadding"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/searchCloseAndProgressParent"
+            app:layout_constraintEnd_toEndOf="@id/searchCloseAndProgressParent"
+            app:layout_constraintStart_toStartOf="@id/searchCloseAndProgressParent"
+            app:layout_constraintTop_toTopOf="@id/searchCloseAndProgressParent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/borderless"
+        android:elevation="@dimen/headerElevation"
+        android:hint="@string/search_here"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLength="@integer/searchMaxLength"
+        android:paddingLeft="@dimen/headerSearchEditTextPadding"
+        app:layout_constraintBottom_toBottomOf="@+id/searchHeader"
+        app:layout_constraintEnd_toStartOf="@+id/searchCloseAndProgressParent"
+        app:layout_constraintStart_toEndOf="@+id/searchBack"
+        app:layout_constraintTop_toTopOf="@id/searchHeader" />
+
+    <ListView
+        android:id="@+id/searchSuggestion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:maxHeight="@dimen/searchSuggestionMaxHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchEditText"
+        app:layout_constraintBottom_toBottomOf="@id/searchGuideline1"
+        android:divider="@null"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/searchGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

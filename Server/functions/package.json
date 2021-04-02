@@ -1,0 +1,36 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "killnode": "killall /f /im node",
+    "runfirebasefunctions": "firebase serve -o 192.168.43.104",
+    "prepareDev": "node ../prepareDev.js",
+    "prepareProd": "node ../prepareProd.js",
+    "prepareDevDeploy": "node ../prepareDevDeploy.js",
+    "prepareProdDeploy": "node ../prepareProdDeploy.js",
+    "devRun": "npm run prepareDev && pwd && npm run runfirebasefunctions",
+    "prodRun": "npm run prepareProd && npm run runfirebasefunctions",
+    "devDeploy": "npm run killnode && npm run prepareDevDeploy && firebase deploy",
+    "prodDeploy": "npm run prepareProdDeploy && firebase deploy"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "algoliasearch": "^4.1.0",
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}

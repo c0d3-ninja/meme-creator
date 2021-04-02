@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <cache-path
+        name="shared_images"
+        path="Share/"
+        />
+    <cache-path
+        name="cropped_images"
+        path="Crop/"/>
+    <cache-path
+        name="temp_images"
+        path="TempImages/"/>
+</paths>

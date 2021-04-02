@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gridAddImage">#FFFFFF</color>
+    <color name="gridParentBg">#000000</color>
+    <color name="gridBg">#424242</color>
+    <color name="gridBgMask">#9CAFAFAF</color>
+    <color name="gridBgDark">#000000</color>
+</resources>

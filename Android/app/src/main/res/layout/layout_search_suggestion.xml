@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@+id/searchSuggestionHeader"
+        style="@style/Header"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/headerHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/searchSuggestionBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/searchSuggestionHeader"
+        app:layout_constraintStart_toStartOf="@id/searchSuggestionHeader"
+        app:layout_constraintTop_toTopOf="@id/searchSuggestionHeader"
+        style="@style/Header.StartIcon"
+        android:padding="@dimen/iconsPadding"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_grey_24dp"
+            app:layout_constraintStart_toStartOf="@id/searchSuggestionBack"
+            app:layout_constraintEnd_toEndOf="@id/searchSuggestionBack"
+            app:layout_constraintTop_toTopOf="@id/searchSuggestionBack"
+            app:layout_constraintBottom_toBottomOf="@id/searchSuggestionBack"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/searchSuggestionCloseAndProgressParent"
+        style="@style/Header.EndIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="@dimen/iconsPadding"
+        app:layout_constraintBottom_toBottomOf="@id/searchSuggestionHeader"
+        app:layout_constraintEnd_toEndOf="@id/searchSuggestionHeader"
+        app:layout_constraintTop_toTopOf="@id/searchSuggestionHeader">
+
+        <ImageView
+            android:id="@+id/searchSuggestionClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_grey_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/searchSuggestionCloseAndProgressParent"
+            app:layout_constraintEnd_toEndOf="@id/searchSuggestionCloseAndProgressParent"
+            app:layout_constraintStart_toStartOf="@id/searchSuggestionCloseAndProgressParent"
+            app:layout_constraintTop_toTopOf="@id/searchSuggestionCloseAndProgressParent"
+            />
+
+        <ProgressBar
+            android:id="@+id/searchSuggestionProgressBar"
+            android:layout_width="@dimen/logoHeight"
+            android:layout_height="@dimen/logoHeight"
+            android:padding="@dimen/iconsPadding"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/searchSuggestionCloseAndProgressParent"
+            app:layout_constraintEnd_toEndOf="@id/searchSuggestionCloseAndProgressParent"
+            app:layout_constraintStart_toStartOf="@id/searchSuggestionCloseAndProgressParent"
+            app:layout_constraintTop_toTopOf="@id/searchSuggestionCloseAndProgressParent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/searchSuggestionEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/borderless"
+        android:elevation="@dimen/headerElevation"
+        android:hint="@string/search_here"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLength="@integer/searchMaxLength"
+        android:paddingLeft="@dimen/headerSearchEditTextPadding"
+        app:layout_constraintBottom_toBottomOf="@+id/searchSuggestionHeader"
+        app:layout_constraintEnd_toStartOf="@+id/searchSuggestionCloseAndProgressParent"
+        app:layout_constraintStart_toEndOf="@+id/searchSuggestionBack"
+        app:layout_constraintTop_toTopOf="@id/searchSuggestionHeader" />
+
+    <ListView
+        android:id="@+id/searchSuggestionListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:maxHeight="@dimen/searchSuggestionMaxHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchSuggestionEditText"
+        app:layout_constraintBottom_toBottomOf="@id/searchSuggestionGuideline1"
+        android:divider="@null"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/searchSuggestionGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

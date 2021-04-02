@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "851439232686",
+    "firebase_url": "https://memeking-development.firebaseio.com",
+    "project_id": "memeking-development",
+    "storage_bucket": "memeking-development-asia"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851439232686:android:9b98360b7459da93316f3f",
+        "android_client_info": {
+          "package_name": "com.thugdroid.memeking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851439232686-rth1d32sauicimoaqqcnmghulv63ojvv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thugdroid.memeking",
+            "certificate_hash": "7517a056f9b0e9301d8567a8767cc2053182aa1f"
+          }
+        },
+        {
+          "client_id": "851439232686-2n27vg3pus2ki3cjdnh3h76rvhr3ef6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm0g6t9r6Qh96113vA7pLCZm8P3PkouWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851439232686-2n27vg3pus2ki3cjdnh3h76rvhr3ef6s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851439232686:android:a29e1ccf15ba8bb5316f3f",
+        "android_client_info": {
+          "package_name": "com.thugdroid.memeking.adminnew.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851439232686-gf18pdbndt7j1ta3t3tr617ktl7g8a7h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thugdroid.memeking.adminnew.debug",
+            "certificate_hash": "7517a056f9b0e9301d8567a8767cc2053182aa1f"
+          }
+        },
+        {
+          "client_id": "851439232686-2n27vg3pus2ki3cjdnh3h76rvhr3ef6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm0g6t9r6Qh96113vA7pLCZm8P3PkouWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851439232686-2n27vg3pus2ki3cjdnh3h76rvhr3ef6s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

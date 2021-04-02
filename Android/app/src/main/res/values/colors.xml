@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#2196F3</color>-->
+<!--    <color name="colorPrimaryDark">#1E88E5</color>-->
+    <color name="colorPrimary">#EC407A</color>
+    <color name="colorPrimaryDark">#D81B60</color>
+    <color name="colorAccent">#0F0F0F</color>
+    <color name="onColorPrimary">#EEEEEE</color>
+    <color name="memeItemBg">#F4F4F4</color>
+
+
+    <color name="textColorPrimary">@color/colorAccent</color>
+    <color name="headerBackground">#FFFFFF</color>
+    <color name="headerBackgroundDark">@color/iconsInactive</color>
+    <color name="loading">@color/glideImagePlaceholder</color>
+    <color name="loading_white">@color/headerBackground</color>
+    <color name="fontItemBg">@color/headerBackground</color>
+    <color name="fontItemBgDark">@color/iconsInactive</color>
+    <color name="bottomSheetBackground">@color/headerBackground</color>
+    <color name="tabBackground">#F7F7F7</color>
+<!--    <color name="iconsPrimary">#696969</color>-->
+    <color name="iconsPrimary">#696969</color>
+    <color name="onColorIconsPrimary">@color/headerBackground</color>
+    <color name="iconsPrimaryDark">#0F0F0F</color>
+    <color name="iconsInactive">#61000000</color>
+    <color name="toolTextIcon">#009688</color>
+    <color name="dividerColor">#14000000</color>
+    <color name="freezeLayer">#80000000</color>
+    <color name="freezeLayerDark">#AE000000</color>
+    <color name="transparant">#00000000</color>
+    <color name="transparant50">#80000000</color>
+    <color name="buttonColorPrimary">@color/colorPrimary</color>
+    <color name="buttonColorPrimaryDark">@color/colorPrimaryDark</color>
+    <color name="onButtonColorPrimary">@color/headerBackground</color>
+    <color name="buttonColorNegative">#E53935</color>
+    <color name="buttonStateLess">@color/headerBackground</color>
+    <color name="buttonStateLessDark">#000000</color>
+    <color name="cardPrimary">@color/headerBackground</color>
+    <color name="onCardPrimary">@color/textColorPrimary</color>
+    <color name="cardPrimarySelected">@color/colorPrimary</color>
+    <color name="onCardPrimarySelected">@color/onColorPrimary</color>
+    <color name="navDrawerMenuHeadingColor">#2E2E2E</color>
+
+
+
+    <color name="buttonInactive">#757575</color> <!--Material 600-->
+    <color name="buttonInactiveDark">#616161</color> <!--Material 700-->
+
+    <color name="regionItem">@color/headerBackground</color>
+
+    <color name="addTextBg">#0D000000</color>
+
+    <color name="createMemeBsbTrackColor">@color/colorAccent</color>
+    <color name="createMemeBsbSecondTrackColor">@color/colorAccent</color>
+    <color name="createMemeBsbSectionTrackColor">@color/colorAccent</color>
+
+    <color name="glideImagePlaceholder">#6C6C6C</color>
+    <color name="templateGridBg">#8A8A8A</color>
+    <color name="templateGridImageBg">#000000</color>
+
+
+
+    <color name="roundedRectangle1">#F44336</color>
+    <color name="roundedRectangle2">#009688</color>
+    <color name="roundedRectangle3">#2196F3</color>
+    <color name="roundedRectangle4">#FFC107</color>
+    <color name="roundedRectangle5">#4CAF50</color>
+
+    <color name="memeImageParentBg">#EDEDED</color>
+
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/bottomNavHome"
+    android:icon="@drawable/ic_home_black_24dp"
+    android:title="@string/home"
+    />
+    <item
+    android:id="@+id/bottomNavUploadTemplate"
+    android:icon="@drawable/ic_file_upload_black_24dp"
+    android:title="@string/template"
+    />
+    <item
+    android:id="@+id/bottomNavCreateMeme"
+    android:icon="@drawable/ic_creatememe_black_24dp"
+    android:title="@string/create_meme"
+    />
+
+</menu>
